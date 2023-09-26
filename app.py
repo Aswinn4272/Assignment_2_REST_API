@@ -71,7 +71,7 @@ def process_pressure():
     
     for i in data['list']:
         if i['dt_txt'][:-3] == date +" "+ time:
-            result = "wind speed = " + str(i['main']['pressure'])
+            result = "pressure = " + str(i['main']['pressure'])
             break
         else:
             result = "enter a valid date time"
