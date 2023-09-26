@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Redirection</title>
+</head>
+<body>
+    <h1>Click a Button to get your Result</h1>
+    <button onclick="redirectToPage('temp')">1. Get Temperature</button><br><br>
+    <button onclick="redirectToPage('wind_speed')">2. Get Wind Speed</button><br><br>
+    <button onclick="redirectToPage('pressure')"> 3. Get Pressure</button><br><br>
+    <button onclick="redirectToPage('terminate')">0. Exit</button>
+
+    <script>
+        function redirectToPage(url) {
+            // This function redirects to the specified URL when a button is clicked.
+            window.location.href = url;
+        }
+    </script>
+    <h1>Result</h1>
+    <h3 style="background-color: green; color: white;">{{result}}</h3>
+</body>
+</html>
