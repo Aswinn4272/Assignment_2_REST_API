@@ -9,7 +9,6 @@ response = requests.get(url)
 if response.status_code == 200:
     # Parse the JSON response
     data = response.json()
-    print(type(data))
 else:
     print(f'HTTP Request Failed with status code: {response.status_code}')
 
